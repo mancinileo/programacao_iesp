@@ -1,0 +1,12 @@
+Exercícios do dia
+Abrir base do "gapminder".
+
+Selecionar o Afeganistão.
+
+Graficar a expectativa de vida do país ao longo dos anos, com uma curva vermelha e qualquer tema de fundo branco.
+
+Abrir base do WVS 2014, selecionar a variável "V144", renomear para "Religião", transformar os números "25" e "64" em "evangélicos" e "católicos" (respectivamente) e o restante em "outros".
+
+Criar uma base com a tabulação das frequências das categorias.
+
+Fazer um gráfico de barras em azul com qualquer tema de fundo branco.
