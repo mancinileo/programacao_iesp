@@ -1,0 +1,63 @@
+---
+title: "Exemplo de apresentação"
+author: "Thiago Moreira da Silva"
+date: "11 de outubro de 2017"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## R Markdown
+
+This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
+
+## Slide with Bullets
+
+- Bullet 1
+- Bullet 2
+- Bullet 3
+
+## Slide with R Output
+
+```{r cars, echo = TRUE}
+summary(cars)
+```
+
+## Gráficos interativos 
+
+```{r pressure}
+library(networkD3)
+data(MisLinks, MisNodes)
+forceNetwork(Links = MisLinks, Nodes = MisNodes, Source = "source",
+             Target = "target", Value = "value", NodeID = "name",
+             Group = "group", opacity = 0.4)
+```
+
+
+
+## Slide novo
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+library(gapminder)
+library(tidyverse)
+library(ggthemes)
+library(plotly)
+
+gapminder <- data.frame(gapminder)
+
+g1 <- gapminder %>% 
+  filter(country %in% c("Angola", "Brazil", "Argentina",
+                        "Cuba", "Canada")) %>% 
+  ggplot(aes(year, lifeExp, color = country)) + 
+  geom_line() + theme_fivethirtyeight() + 
+  scale_y_continuous(limits = c(10,90)) + 
+  geom_point() +  theme(legend.position="none")
+  
+ggplotly(g1)
+```
+
+
