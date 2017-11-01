@@ -1,0 +1,15 @@
+
+## Exercício:
+
+## 1) Baixar os dados eleitores de 1998 e 2006. 
+
+## 2) Selecionar os estados, os candidatos, os partidos, 
+## e o campo de votacao do candidato. 
+
+## 3) Criar uma nova variável com a votação do candidato
+## por estado. 
+
+## 2) Colar as bases.
+
+## 3) Mapear os dados de votação no segundo turno
+## das eleições presidenciais. 
